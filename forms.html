@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset style="width:70%">
+            <fieldset style="display:inline;text-align:center;background-color:aqua;width:45%;padding: 0.1px">
+                <h2>Name</h2>
+            </fieldset>
+            <fieldset style="display:inline;text-align:center;background-color:aqua;width:45%;padding: 0.1px">
+                <h2>Value</h2>
+            </fieldset>
+            <fieldset style="display:inline;text-align:left;width:45%;padding: 0.5px">
+                <label for="name">Name</label>
+            </fieldset>
+            <fieldset style="display:inline;text-align:center;width:45%;padding: 0.5px">
+                <input style="padding:0.5px; width:98%" type="text" id="name">
+            </fieldset>
+            <fieldset style="width:42%;display:inline">
+                <label style="height:50px" for="sex">Sex</label>
+            </fieldset>
+            <fieldset style="display:inline;width:42%">
+                Male<input style="display:block" type="radio" id="sex" name="person">
+                Female<input style="display:block" type="radio" id="sex" name="person">
+            </fieldset>
+            <fieldset style="display:inline;text-align:left;width:45%;padding: 0.5px">
+                <label for="eyecolor">Eye Color</label>
+            </fieldset>
+            <fieldset style="display:inline;width:45%;padding: 0.5px">
+                <select>
+                    <option id="eyecolor" value="green">green </option>
+                    <option id="eyecolor" value="blue">blue </option>
+                    <option id="eyecolor" value="brown">brown </option>
+                    <option id="eyecolor" value="black">black </option>
+                </select>
+            </fieldset>
+            <fieldset style="display:inline;text-align:left;width:45%;padding: 0.5px">
+                <label for="check">Check all that apply</label>
+            </fieldset>
+            <fieldset style="display:inline-block;width:45%;padding: 0.5px">
+                <input style="align-items:start;" type="checkbox" id="check" name="checks1"> Over 6 feet tall
+                <input style="display:block;align-items:start;" type="checkbox" id="check" name="checks2">Over 200 ponds
+            </fieldset>
+            <fieldset style="width:89%">
+                <label for="textarea">Describe your athletic ability:</label>
+                <textarea id="textarea" cols="95" rows="7"></textarea>
+                <fieldset style="width:89%;text-align:center">
+                    <Button>Enter my information</Button>
+                </fieldset>
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+
+</html>
