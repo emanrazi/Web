@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color:beige;
+            border:5px solid red;
+            display:flex;/*by default flex direction is row,flex directionn used to make responsive design*/
+            height:820px;
+            flex-direction:row;
+            align-items:center;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: start; /*to handle the space between flex wrap*/
+           /* justify-content:space-evenly;
+            /*flex-wrap: nowrap; ot move on next line
+            flex-flow: row-reverse;*/
+        }
+
+        .box {
+            width: 200px;
+            /*height: 200px;*/
+            border: 1px solid black;
+            margin:2px;
+            padding:2px;
+        }
+
+        #box1 {
+            background-color: blue;
+            flex-shrink: 3;
+        }
+
+        #box2 {
+            background-color:palegreen;
+        }
+
+        #box3 {
+            background-color: hotpink;
+        }
+
+        #box4 {
+            background-color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Different different ways for positioning elements on gui is called layout
+    flexbox is 1-d layout (row,colum) items ko align krna or place krna
+    justify content--main axis k according cheezu ko place krta
+    agar apki flex directon row ha to apka main axis horizontal hoga
+    align items-- work corrosponding to your vertical axis
+    -->
+</body>
+<div class="container">
+    <div class="box" id="box1">Box1</div>
+    <div class="box" id="box2">Box2</div>
+    <div class="box" id="box3">Box3</div>
+    <div class="box" id="box4">Box4</div>
+</div>
+
+</html>

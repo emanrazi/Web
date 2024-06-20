@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:#eee;
+        }
+        
+        h2,p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 16px;
+            box-sizing: border-box;
+            width: 350px;
+            border-radius: 10px;
+            height: 550px;
+            box-shadow: 0 18px 15px rgba(0, 0, 0, 0.5);
+            background-color: white;
+            border-top: 2px solid #ff09ff;
+            border-left:2px solid #ff09ff;
+            border-bottom: 2px solid #09daff;
+            border-right:2px solid #09daff;
+
+        }
+        
+        .profile-demo {
+            background-color: antiquewhite;
+            width: 130px;
+            height: 130px;
+            border-radius: 100px;
+            background: white;
+            box-shadow: 0 10px 15px rgba(204, 201, 201, 0.872);
+            position: relative;
+            bottom: 80px;
+            left: 100px;
+           
+        }
+        
+        .card-content {
+            position: relative;
+            bottom: 195px;
+        }
+        
+        #card-img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        #profile-img {
+            width: 110px;
+            height: 100px;
+            position: relative;
+            bottom: 195px;
+            left: 110px;
+            border-radius: 100px;
+            cursor:pointer;
+        }
+        
+        .icons {
+            font-size: 2em;
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            bottom: 150px;
+            cursor: pointer;
+        }
+        
+        #icon1, #icon2, #icon3, #icon4, #icon5{
+            transition: transform 0.3s ease;
+        }
+        
+        
+        #icon1 {
+            color: blue;
+        }
+        
+        #icon2 {
+            color: rgb(255, 0, 187);
+        }
+        
+        #icon3 {
+            color: blue;
+        }
+        
+        #icon4 {
+            color: blue;
+        }
+        
+        #icon5 {
+            color: black;
+        }
+        
+        #icon1:hover, #icon2:hover, #icon3:hover, #icon4:hover, #icon5:hover {
+            transform: scale(1.2);
+        }
+        
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin-bottom: 20px;
+            position: relative;
+            bottom: 160px;
+            left: 50px;
+        }
+        
+        #bt1, #bt2 {
+            width: 45%;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        #bt1 {
+            background-color: blue;
+            color: white;
+        }
+        
+        #bt2 {
+            background-color: #333;
+            color: white;
+        }
+        
+        #bt1:hover, #bt2:hover {
+            background-color: aliceblue;
+            color: black;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-image">
+            <img src="OIP.jpg" id="card-img">
+        </div>
+
+        <div class="profile-demo"></div>
+        <div class="profile-image">
+            <img src="mypic.jpeg" id="profile-img">
+        </div>
+        <div class="card-content">
+            <h2>Eman Razi</h3>
+            <p>Undergraduate Computer Scientist</p>
+            <p>University of Gujrat</p>
+        </div>
+        <div class="buttons">
+          <button id="bt1">Follow</button>
+          <button id="bt2">Message</button>
+        </div>
+        <div class="icons">
+            <i class="fa-brands fa-facebook" id="icon1"></i>
+            <i class="fa-brands fa-instagram" id="icon2"></i>
+            <i class="fa-brands fa-twitter " id="icon3"></i>
+            <i class="fa-brands fa-linkedin" id="icon4"></i>
+            <i class="fa-brands fa-github" id="icon5"></i>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            justify-content: center;
+            --primary-color: black;
+        }
+
+        .container {
+            border: 1px solid black;
+            background-color: darkorange;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            /*1. x offset|y offset|color*/
+            box-shadow: -30px 15px var(--primary-color);
+
+            /*2. x offset|y offset|blur offset|color*/
+            box-shadow: 30px 15px 20px red;
+
+            /*3. x offset|y offset|blur radius|spread radius|color*/
+            box-shadow: 30px 15px 20px 5px red;
+
+            /*4. inset x offset|y offset|color*/
+            box-shadow: inset 30px 15px red;
+
+            /*4. multiple shadows*/
+            box-shadow: 30px 15px red, 35px 20px purple;
+
+            text-shadow: 10px 15px red;
+
+            text-shadow:10px 15px red,15px 20px grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text/Box shadow</h1>
+    <div class="container">I am box</div>
+</body>
+
+</html>

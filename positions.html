@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       .container{
+        margin:20px;
+        border:1px solid black;
+        height:8000px;
+        background-color: azure;
+       }
+       .img2{
+        top:100px;
+       /* position: absolute;*/
+        left:100px;
+       }
+       .img3{
+        position:sticky;
+        top:100px;
+       }
+       .img4{
+        position: fixed;
+       }
+       .box{
+        background-color: blueviolet;
+        height:5000px;
+       }
+    </style>
+</head>
+<body>
+    <h1>CSS Position Property</h1>
+    <!--By default position property is static
+    in relaative--- old space will be maintained relative to window
+    absolute--for overlapping, absolute positioning relative to closest position i.e there is div
+    gap will not be maintained, other elements come close
+    fixed--when you scroll your image position will remains fixed aand it reains fix after the parent  containercompletion
+    stickky--when you scroll your image will remains fixed but you need to mention
+    in which directionn u want to stick and it is remained fix in its parent container
+    -->
+     
+    <div class="container">
+    <img src="internship.png" 
+    alt="error" 
+    width="200px" 
+    height="200px"
+    class="img1">
+
+    <img src="certificate.png" 
+    alt="error" 
+    width="200px" 
+    height="200px"
+    class="img2">
+
+    <img src="mountains.jpg" 
+    alt="error" 
+    width="150px" 
+    height="200px"
+    class="img3">
+
+    <img src="internship.png" 
+    alt="error" 
+    width="200px" 
+    height="200px"
+    class="img4">
+
+    </div>
+
+    <div class="box">
+    </div>
+</body>
+</html>
